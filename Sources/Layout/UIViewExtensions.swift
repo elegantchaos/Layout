@@ -5,7 +5,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     func stickTo(view: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
         leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
