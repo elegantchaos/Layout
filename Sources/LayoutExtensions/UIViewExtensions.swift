@@ -3,6 +3,7 @@
 //  All code (c) 2020 - present day, Elegant Chaos Limited.
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
+#if targetEnvironment(macCatalyst) || !os(macOS)
 import UIKit
 
 public extension UIView {
@@ -14,3 +15,4 @@ public extension UIView {
         topAnchor.constraint(equalTo: view.topAnchor).isActive = true
     }
 }
+#endif
